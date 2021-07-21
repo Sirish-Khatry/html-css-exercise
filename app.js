@@ -56,7 +56,7 @@ for(let i = 100; i <= 200; i++){
     }
 }
 let today = new Date();
-let day = now.getDay();
+let day = today.getDay();
 switch(day){
     case 0:
         console.log("Sunday")

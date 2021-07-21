@@ -15,7 +15,65 @@
     let y = 2;
     console.log(`The addition of x and y is: ${x+y}`) 
     </script>
-
 <script src="app.js"></script>
+<div id="container"></div>
+<script>
+
+let containerElement = document.querySelector("#container");
+
+containerElement.style.width = "100px";
+containerElement.style.height = "100px";
+containerElement.style.backgroundColor = "red";
+
+console.log(containerElement);
+
+let leadElement = document.createElement("p");
+let junkElement = document.createElement("p");
+
+leadElement.textContent = "Hello World!, this is a lead";
+junkElement.textContent = "Junk";
+
+containerElement.appendChild(leadElement);
+containerElement.appendChild(junkElement);
+
+// Conditions exercise
+let age = 23;
+
+if(age >= 18 && age <= 65){
+    console.log("Satisfied");
+}else if( age < 18) {
+    console.log("Underage");
+} else {
+    console.log("Not satisfied");
+}
+
+let result = age >= 50 ? "Age is 50 or over" : "Under 50";
+console.log(result);
+
+let myArray = Array("Hello", "Everyone");
+console.log(myArray.length);
+
+myArray.push("Im sirish" , "Born in Nepal", "Living in the UK");
+console.log(myArray.length);
+myArray.shift();
+
+for(const element of myArray){
+    console.log(element);
+}
+
+
+const func = function(num1 , num2){
+    return num1 - num2;
+};
+
+function welcome(name, age, gender){
+
+return console.log(`My name is ${name}, i am ${age} years old and of gender ${gender}`);
+};
+
+powerUp = (n1, n2) => Math.pow(n1,n2);
+console.log(powerUp(2,2));
+</script>
+
 </body>
 </html>
