@@ -1,24 +1,7 @@
-
-
-
-
-class Pokemon {
+function Pokemon(pokemonData) {
     constructor(name, url)
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const dittoJson = {    
     "abilities": [
@@ -42,13 +25,23 @@ const dittoJson = {
     };
 
 
-    const increase = (value) => {
-        console.log(`New value ${value+10}`);
+    const increase = (val) => {
+        console.log(`New value ${val+10}`);
     }
 
     const main = (callBack) => {
-        let value = prompt(`Please enter a value`);
+        let value = parseInt(prompt(`Please enter a value`));
         callBack(value);
     }
     main(increase);
+
+    (function hello(){
+      var x = 1;
+      var y = 2;
+
+      return x+y;
+    })();
+
+    console.log(x);
+
 
